@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+    <head>
+        <title>Binary Game</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script>
+            window.onerror = function(){
+                alert(arguments[0] + "|"+ arguments[1]+"|"+arguments[2]);
+                console.error(arguments);
+            };
+        </script>
+
+    </head>
+    <body >
+        <div id="canvas-container">
+
+            <canvas  id="canvas"></canvas>
+            <canvas  id="canvasFundo"></canvas>
+
+
+        </div>
+        <div id="tela-inicial">
+            <div>
+                 <h2  class="titulo">Binary Game</h2>
+
+            </div>
+
+
+                <div class="ranking">
+
+                    <div>
+                      <label>Record</label>
+                      <label id="record-txt">0</label>
+                    </div>
+
+                    <div id="div-ultimo">
+                      <label>Ultimo</label>
+                      <label id="ultimo-txt">0</label>
+                    </div>
+
+                </div>
+
+                <div class="botoes">
+
+                    <button id="btn-start">
+                        START
+
+                    </button>
+
+                    <div class="botoes-inferior" style="display:none">
+
+                        <button  id="btn-compartilhar">
+                            Compartilhar
+                        </button>
+
+                        <button  id="btn-avaliar">
+                            Avaliar
+                        </button>
+
+                    </div>
+
+                </div>
+
+          <div class="escolha"> Escolha Tecnologia</div>
+        </div>
+
+   
+
+ 
+        <script type="text/javascript" src="js/promises.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+  @font-face {
+                font-family: 'bitFont';
+                font-style: normal;
+                font-weight: 400;
+                src: local('bitFont-Light'), local('bitFont-Regular'), url(font/pressstart2p.woff) format('woff');
+            }
+            .font8Bit{
+                font-family : 'bitFont', Arial !important;
+            }
+
+
+body{
+    background-color: #111;
+}
+#canvas, #canvasFundo{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+#canvas{
+    z-index: 2;
+    background-color: transparent;
+}
+#canvasFundo{
+    z-index: 1;
+}
+
+#canvas-container{
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+
+}
+
+
+
+#tela-inicial{
+    display: block;
+    background-color: #000;
+    color:#fafafa;
+    font-family: 'bitFont';
+    position: absolute;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+    text-align: center;
+
+
+
+
+}
+.titulo{
+    font-family: 'bitFont';
+    font-size: 35px;
+    font-weight: bolder;
+    margin:0;
+    margin-bottom: 20px;
+}
+
+.ranking label{
+    display:  block;
+}
+
+.ranking div,#btn-start{
+    width: 200px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #000;
+    color:#fafafa;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border:4px solid #fff;
+}
+.escolha{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 3px;
+   font-size: 9px;
+}
+
+#btn-start{
+    display: block;
+    font-size: 35px;
+    width: 100%;
+    max-width: 455px;
+    padding: 15px
+}
+
